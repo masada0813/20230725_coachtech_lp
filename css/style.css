@@ -3,6 +3,7 @@
     width: 200px;
     height: 50px;
     padding-left: 70px;
+    padding-top: 10px;
 }
 .header_nav{
     display: flex;
@@ -64,12 +65,15 @@
 }
 
 #news{
-    font-family: ;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Gorditas', cursive;
     padding-bottom: 20px;
+    color: #c71585;
 }
 
 .information{
     font-weight: bold;
+    font-size: 20px;
     padding-bottom: 20px;
 }
 
@@ -109,7 +113,9 @@
 }
 
 #about{
-    font-family: ;
+    font-family: 'Dancing Script', cursive;
+font-family: 'Gorditas', cursive;
+color: #c71585;
     padding-bottom: 20px;
 }
 
@@ -156,7 +162,9 @@
 }
 
 #service{
-    font-family: ;
+    font-family: 'Dancing Script', cursive;
+font-family: 'Gorditas', cursive;
+color: #c71585;
     padding-bottom: 30px; 
 }
 
@@ -252,12 +260,15 @@
 }
 
 #blog{
-    font-family: ;
+    font-family: 'Dancing Script', cursive;
+font-family: 'Gorditas', cursive;
+color: #c71585;
     padding-bottom: 20px;
 }
 
 .blog{
     font-weight: bold;
+    font-size: 20px;
     padding-bottom: 30px;
 }
 
@@ -273,23 +284,35 @@
     margin-left: 380px;
     border-radius: 10px;
     background-color: white;
+     position: relative;
+    top: 0px;
+    left: 0px;
 }
 
 .blog_item2{
     width: 300px;
     border-radius: 20px;
     background-color: white;
+    position: relative;
+    top: 0px;
+    left: 0px;
 }
 .blog_item3{
   width: 300px;
   border-radius: 20px;
   background: white;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border-radius: 20px;
 }
 
 .blog_img{
     width: 300px;
     height: 200px;
     border-radius: 10px 10px 0 0;
+   
+
 }
 
 .blog_text{
@@ -319,6 +342,11 @@
     top: 0;
     left: 0;
     font-size: 20px;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    
+    border-radius: 10px 0px 0px 0px;
     /* color: white; */
     background: plum;
     padding: 0;
@@ -355,19 +383,30 @@
 }
 
 .company_title{
-
+   margin-left: 600px;
+   padding-top: 50px;
+   padding-bottom: 40px;
 }
 
 #company{
-    font-family: ;
+    font-family: 'Dancing Script', cursive;
+font-family: 'Gorditas', cursive;
+color: #c71585;
 }
 
 .company{
     font-weight: bold;
+    padding-top: 20px;
+    font-size: 20px;
 }
 
 .table_border{
-
+    margin-left: 600px;
+}
+.table,tr,td{
+    border: 1px solid;
+    width: 700px;
+    height: 50px;
 }
 
 .tr_text{
@@ -376,35 +415,44 @@
 
 .th_text{
     background: #999999;
+    padding-top: 20px;
+    width: 200px;
 }
 
 .td_text{
-
+    padding-left: 20px;
 }
 
 
 /* fleximg */
 
-
-.flex_img{
-    padding-top: 50px;
+.flex{
+     padding-top: 50px;
     display: flex;
+   
+}
+.flex_img{
+   position: relative;
+    top: 0px;
+    left: 0px; 
 }
 
 .flex_img_text{
     width: 980px;
-    position: relative;
+    
     
 }
 
 .img_text{
-    color: red;
+    color: white;
+    font-size: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 200px;
+    left: 400px;
+
 }
 
 .inpuiries{
@@ -428,9 +476,11 @@
     margin: auto;
     width: 150px;
     border: 1px;
-    border-radius: 20px;
+    border-radius: 40px;
     text-decoration: none;
-    position: relative;
+    /* position: relative;
+    top: 0px;
+    left: 0px; */
     background: linear-gradient(90deg,#ff1493,#c71585);
     color: white;
     display: block;
@@ -438,17 +488,27 @@
     box-shadow: 0px 10px 5px rgb(89, 59, 100);
 }
 
-.puiries_btn_before{
+.inpuiries_btn::before{
+    content: "";
+    background: url(../img/mail.svg);
+    background-size: cover;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    display: inline-block;
+}
+/* .puiries_btn_before::after{
     content: "";
     position: absolute;
-    top: 50%;
-    right: 15%;
+    top: 20px;
+    right: 10px;
     background: url(../img/mail.svg) no-repeat;
     background-size: cover;
     width: 30px;
     height: 30px;
     transform: translateY(0,-50%);
-}
+} */
 
 
 /* footer */
